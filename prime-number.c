@@ -6,7 +6,6 @@
 
 int main()
 {
-
   int i = 2, n, r = 0;
 
   printf("Enter any Number :");
@@ -29,7 +28,6 @@ int main()
   {
     printf("%d is not a Prime Number", n);
   }
-
   else
   {
     printf("%d is a Prime Number", n);

@@ -7,32 +7,32 @@
 int main()
 {
 
-  int a = 2, i, r = 0;
+  int i = 2, n, r = 0;
 
   printf("Enter any Number :");
-  scanf("%d", &i);
+  scanf("%d", &n);
 
-  while (i > a && r == 0)
+  for (; i < n; i++) // it can also be done using while loop, but i am using for loop here...
   {
-    if (i % a == 0)
+    if (n % i == 0)
     {
       r = 1;
+      break;
     }
-    else if (i % a != 0)
+    else
     {
       r = 0;
     }
-    a++;
   }
 
-  if (r == 1 || i == 0 || i == 1)
+  if (r == 1 || n == 0 || n == 1)
   {
-    printf("%d is not a Prime Number", i);
+    printf("%d is not a Prime Number", n);
   }
 
   else
   {
-    printf("%d is a Prime Number", i);
+    printf("%d is a Prime Number", n);
   }
 
   return 0;

@@ -18,7 +18,7 @@ int main()
         i++;
         n /= 10;
     }
-    printf("%d\n", i);
+    
     n = inum;
 
     while (n != 0) // outer loop used to add powers

@@ -9,7 +9,7 @@ int main()
     int i, n, num, flag;
     printf("Enter the number u want to find prime factors of : ");
     scanf("%d", &num);
-    printf("%d = 1 ", num);
+    printf("%d = ", num);
 
     for (n = 2; n <= num; n++)
     {
@@ -25,8 +25,12 @@ int main()
         {
             for (; num % n == 0;)
             {
-                printf("* %d ", n);
+                printf(" %d ", n);
                 num /= n;
+                if (num != 1)
+                {
+                    printf("*");
+                }
             }
         }
     }
